@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import { AppRegistry,Image,Text, StyleSheet,View ,Button} from 'react-native';
+import { AppRegistry,Image,Text, StyleSheet,View ,TouchableOpacity} from 'react-native';
 
   export default class Home extends Component {
     static navigationOptions = {
@@ -24,9 +24,11 @@ import { AppRegistry,Image,Text, StyleSheet,View ,Button} from 'react-native';
           <View style={styles.LinkedCircle}>
           <Image source={require('./Assets/linkedin-letters.png')} style={styles.GoogleImage} />
           </View>
+          <TouchableOpacity onPress={() => navigate('Login')}>
           <View style={styles.MailCircle}>
           <Image source={require('./Assets/envelope.png')} style={styles.GoogleImage} />
           </View>
+          </TouchableOpacity>
           </View>
         </View>
       </View>
