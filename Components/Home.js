@@ -14,18 +14,18 @@ import { AppRegistry,Image,Text, StyleSheet,View ,Button} from 'react-native';
         <View style={ styles.loginForm }>
           <Text style={styles.WelcomeText}>Welcome to Creid</Text>
           <Text style={styles.DescriptionText}>Track your Property Value in Real-time</Text>
-          <View style={{flexDirection:'row',marginTop:10,justifyContent:'space-between'}}>
+          <View style={{flexDirection:'row',marginTop:20,justifyContent:'space-between'}}>
           <View style={styles.Googlecircle}>
           <Image source={require('./Assets/google-plus-logo.png')} style={styles.GoogleImage} />
           </View>
-          <View style={styles.Googlecircle}>
-          <Image source={require('./Assets/google-plus-logo.png')} style={styles.GoogleImage} />
+          <View style={styles.FacebooCircle}>
+          <Image source={require('./Assets/facebook-logo.png')} style={styles.GoogleImage} />
           </View>
-          <View style={styles.Googlecircle}>
-          <Image source={require('./Assets/google-plus-logo.png')} style={styles.GoogleImage} />
+          <View style={styles.LinkedCircle}>
+          <Image source={require('./Assets/linkedin-letters.png')} style={styles.GoogleImage} />
           </View>
-          <View style={styles.Googlecircle}>
-          <Image source={require('./Assets/google-plus-logo.png')} style={styles.GoogleImage} />
+          <View style={styles.MailCircle}>
+          <Image source={require('./Assets/envelope.png')} style={styles.GoogleImage} />
           </View>
           </View>
         </View>
@@ -66,7 +66,6 @@ import { AppRegistry,Image,Text, StyleSheet,View ,Button} from 'react-native';
     Googlecircle: {
       width: 50,
       height: 50,
-      marginLeft:40,
       borderRadius: 50/2,
       backgroundColor: 'red',
       borderWidth:1,
@@ -75,6 +74,42 @@ import { AppRegistry,Image,Text, StyleSheet,View ,Button} from 'react-native';
       alignItems:'center'
 
   },
+  FacebooCircle: {
+    width: 50,
+    height: 50,
+    marginLeft:40,
+    borderRadius: 50/2,
+    backgroundColor: '#3b5998',
+    borderWidth:1,
+    borderColor:'#fff',
+    justifyContent:'center',
+    alignItems:'center'
+
+},
+LinkedCircle: {
+  width: 50,
+  height: 50,
+  marginLeft:40,
+  borderRadius: 50/2,
+  backgroundColor: '#4875B4',
+  borderWidth:1,
+  borderColor:'#fff',
+  justifyContent:'center',
+  alignItems:'center'
+
+},
+MailCircle: {
+  width: 50,
+  height: 50,
+  marginLeft:40,
+  borderRadius: 50/2,
+  backgroundColor: '#FFFF00',
+  borderWidth:1,
+  borderColor:'#fff',
+  justifyContent:'center',
+  alignItems:'center'
+
+},
   GoogleImage:{
     width:30,
     height:30
