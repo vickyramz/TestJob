@@ -33,11 +33,15 @@ import { AppRegistry,TouchableOpacity,Image,Text, StyleSheet,View ,TextInput} fr
                returnKeyType="next" 
                placeholder='Password' 
               />
-               <View style={{marginLeft:250,borderWidth:1,borderColor:'#000000',backgroundColor:'#fff', padding:10,marginTop:20, justifyContent:'center'}}>
+              <TouchableOpacity onPress={()=>navigate('DashBoard')}>
+              <View style={{marginLeft:250,borderWidth:1,borderColor:'#000000',backgroundColor:'#fff', padding:10,marginTop:20, justifyContent:'center'}}>
               <Text style={{color:'#000000'}}>Log In</Text>
               </View>
+              </TouchableOpacity>
               
-              <Text style={{color:'#000000',marginLeft:150,marginTop:10}}>I've forgotten my Password</Text>
+              <TouchableOpacity onPress={()=>navigate('ForgotPassword')}>
+              <Text style={{color:'#000000',marginLeft:150,marginTop:20}}>I've forgotten my Password</Text>
+              </TouchableOpacity>
             </View>
            
         </View>
