@@ -147,8 +147,8 @@ export default class DashBoard extends React.Component {
   render() {
     return (
     <View style={styles.container}>
-  
-    <TabView style={{marginTop:150}}
+  <View style={{flex:0.3,backgroundColor:'#000000'}}></View>
+    <TabView style={{marginTop:10}}
         navigationState={this.state}
         renderScene={this._renderScene}
         renderTabBar={this._renderTabBar}
