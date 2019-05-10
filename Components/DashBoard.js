@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View,Text, TouchableOpacity, StyleSheet,Image} from 'react-native';
+import { View,Text, TouchableOpacity, ScrollView,StyleSheet,Image} from 'react-native';
 import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 import { Marker } from 'react-native-maps';
 import { TabView, SceneMap } from 'react-native-tab-view';
@@ -28,27 +28,41 @@ const FirstRoute = () => (
   </View>
 );
 const SecondRoute = () => (
+ 
   <View style={[styles.container, { backgroundColor: '#fff' }]} >
+   <ScrollView>
 <View style={styles.Mapcontainer}>
 <Text style={{fontSize:20,color:'#000000'}}>3 WoodPeacker Place</Text>
 <Text style={{fontSize:12,color:'grey'}}>Bracknel . RG1288H</Text>
 <View style={{flexDirection:'row',justifyContent:'space-between'}}>
+<TouchableOpacity   >
 <View style={{borderRightWidth:1,padding:30,borderColor:'#000000',justifyContent:'center',alignItems:'center'}}>
 <Image source={require('./Assets/menu.png')} style={{width:35,height:35}} />
 <Text style={{fontSize:12,color:'grey'}}>?</Text>
 </View>
+</TouchableOpacity>
+
+<TouchableOpacity>
 <View style={{borderRightWidth:1,padding:30, borderColor:'#000000',justifyContent:'center',alignItems:'center'}}>
 <Image source={require('./Assets/bed.png')} style={{width:35,height:35}} />
 <Text style={{fontSize:12,color:'grey'}}>?Bed</Text>
 </View>
+</TouchableOpacity>
+
+<TouchableOpacity>
 <View style={{borderRightWidth:1,padding:30,borderColor:'#000000',justifyContent:'center',alignItems:'center'}}>
 <Image source={require('./Assets/bath.png')} style={{width:35,height:35}} />
 <Text style={{fontSize:12,color:'grey'}}>?Bath</Text>
 </View>
+</TouchableOpacity>
+
+<TouchableOpacity>
 <View style={{borderRightWidth:1,padding:30,borderColor:'#000000',justifyContent:'center',alignItems:'center'}}>
 <Image source={require('./Assets/land.png')} style={{width:35,height:35}} />
 <Text style={{fontSize:12,color:'grey'}}>?sq/m</Text>
 </View>
+</TouchableOpacity>
+
 </View>
      <MapView
        provider={PROVIDER_GOOGLE} // remove if not using Google Maps
@@ -78,16 +92,27 @@ const SecondRoute = () => (
  <Text style={{marginLeft:150,fontSize:15,color:'#000000',marginRight:20}}>$180000</Text>
  
  </View>
- <View style={{flexDirection:'row',justifyContent:'space-between'}}>
- <Image source={require('./Assets/green.png')} style={{width:30,height:30}} />
+ <View style={{flexDirection:'row',justifyContent:'space-between',padding:30}}>
+ <Image source={require('./Assets/green.png')} style={{width:30,height:30,marginLeft:10}} />
  <Text style={{marginLeft:10,fontSize:15,color:'#000000'}}>CREID Live Evalution</Text>
- <Text style={{marginLeft:150,fontSize:15,color:'#000000',marginRight:20}}>$180000</Text>
+ <Text style={{marginLeft:120,fontSize:15,color:'#000000',marginRight:10}}>$180000</Text>
  
  </View>
-     </View>
+     </View>  
+     
    </View>
-
+ 
+  
+  </ScrollView>
+  <View style={{justifyContent:'center',alignItems:'center', position: 'absolute',
+  bottom:0,
+  left:170,}}>
+ <View style={styles.LinkedCircle}>
+<Image source={require('./Assets/plus.png')} style={{width:30,height:30}} />
+</View>
+ </View>
   </View>
+  
 );
 const ThirdRoute = () => (
     <View style={[styles.container, { backgroundColor: '#673ab7' }]} />
@@ -145,6 +170,7 @@ export default class DashBoard extends React.Component {
   });
 
   render() {
+    const{navigate}=this.props.navigation;
     return (
     <View style={styles.container}>
   <View style={{flex:0.3,backgroundColor:'#000000'}}></View>
@@ -178,6 +204,18 @@ const styles = StyleSheet.create({
     marginRight:10,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  LinkedCircle: {
+    width: 50,
+    height: 50,
+    borderRadius: 50/2,
+    backgroundColor: 'green',
+    borderWidth:0,
+    borderColor:'#fff',
+    justifyContent:'center',
+   
+    alignItems:'center'
+  
   },
   map: {
     height: 250,
