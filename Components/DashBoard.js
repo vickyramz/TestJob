@@ -2,7 +2,9 @@ import * as React from 'react';
 import { View,Text, TouchableOpacity, ScrollView,StyleSheet,Image} from 'react-native';
 import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 import { Marker } from 'react-native-maps';
+import LiveValution from './LiveValution'
 import { TabView, SceneMap } from 'react-native-tab-view';
+
 import Animated from 'react-native-reanimated';
 
 const FirstRoute = () => (
@@ -35,7 +37,7 @@ const SecondRoute = () => (
 <Text style={{fontSize:20,color:'#000000'}}>3 WoodPeacker Place</Text>
 <Text style={{fontSize:12,color:'grey'}}>Bracknel . RG1288H</Text>
 <View style={{flexDirection:'row',justifyContent:'space-between'}}>
-<TouchableOpacity   >
+<TouchableOpacity>
 <View style={{borderRightWidth:1,padding:30,borderColor:'#000000',justifyContent:'center',alignItems:'center'}}>
 <Image source={require('./Assets/menu.png')} style={{width:35,height:35}} />
 <Text style={{fontSize:12,color:'grey'}}>?</Text>
@@ -115,9 +117,18 @@ const SecondRoute = () => (
   
 );
 const ThirdRoute = () => (
-    <View style={[styles.container, { backgroundColor: '#673ab7' }]} />
+    <View style={[styles.container, { backgroundColor: '#fff' }]} />
   );
+  Redirect=()=>{
+    this.props.navigation.navigate('Login');
+  }
 export default class DashBoard extends React.Component {
+  constructor(props){
+    super(props);
+
+
+
+  }
     static navigationOptions = {
         header:null
       };
@@ -129,9 +140,11 @@ export default class DashBoard extends React.Component {
       { key: 'Third', title: 'HouseKeeping' },
     ],
   };
-
+ 
   _handleIndexChange = index => this.setState({ index });
-
+  Redirect=()=>{
+ this.props.navigation.navigate('Login');
+  }
   _renderTabBar = props => {
     const inputRange = props.navigationState.routes.map((x, i) => i);
 
