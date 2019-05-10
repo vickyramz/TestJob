@@ -1,12 +1,10 @@
 
 import React, { Component } from 'react';
 import {TextInputLayout} from 'rn-textinputlayout';
-import { AppRegistry,Image,Text, StyleSheet,View ,TextInput} from 'react-native';
+import { AppRegistry,TouchableOpacity,Image,Text, StyleSheet,View ,TextInput} from 'react-native';
 
   export default class Login extends Component {
-    static navigationOptions = {
-      header:null
-    };
+    
     render() {
       const {navigate} = this.props.navigation;
       return (
@@ -14,7 +12,10 @@ import { AppRegistry,Image,Text, StyleSheet,View ,TextInput} from 'react-native'
             <View style={styles.LoginForm}>
             <View style={{flexDirection:'row'}}>
             <Text style={{color:'#000'}}>Sign In</Text>
-            <Text style={{color:'#000',marginLeft:150}}>I don't have an account</Text></View>
+            <TouchableOpacity onPress={() => navigate('SignUp')}>
+            <Text style={{color:'#000',marginLeft:150}}>I don't have an account</Text>
+            </TouchableOpacity>
+          </View>
            
            
             <TextInput style = {styles.Input} 
@@ -32,9 +33,11 @@ import { AppRegistry,Image,Text, StyleSheet,View ,TextInput} from 'react-native'
                returnKeyType="next" 
                placeholder='Password' 
               />
-               <View style={{borderRadius:25,marginLeft:250,borderWidth:1,borderColor:'#000000',backgroundColor:'grey', padding:10,marginTop:20, justifyContent:'center'}}>
+               <View style={{marginLeft:250,borderWidth:1,borderColor:'#000000',backgroundColor:'#fff', padding:10,marginTop:20, justifyContent:'center'}}>
               <Text style={{color:'#000000'}}>Log In</Text>
               </View>
+              
+              <Text style={{color:'#000000',marginLeft:150,marginTop:10}}>I've forgotten my Password</Text>
             </View>
            
         </View>

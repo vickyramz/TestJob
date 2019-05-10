@@ -1387,7 +1387,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   _reactNative.AppRegistry.registerComponent(_app.name, function () {
     return _App.default;
   });
-},0,[1,2,569,702],"index.js");
+},0,[1,2,569,711],"index.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : {
@@ -92752,9 +92752,11 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _Login = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[4], "./Components/Login"));
 
-  var _react = _interopRequireWildcard(_$$_REQUIRE(_dependencyMap[5], "react"));
+  var _SignUp = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[5], "./Components/SignUp"));
 
-  var _reactNative = _$$_REQUIRE(_dependencyMap[6], "react-native");
+  var _react = _interopRequireWildcard(_$$_REQUIRE(_dependencyMap[6], "react"));
+
+  var _reactNative = _$$_REQUIRE(_dependencyMap[7], "react-native");
 
   var MainNavigator = (0, _reactNavigation.createStackNavigator)({
     Home: {
@@ -92762,12 +92764,43 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     },
     Login: {
       screen: _Login.default
+    },
+    SignUp: {
+      screen: _SignUp.default
     }
   });
   var App = (0, _reactNavigation.createAppContainer)(MainNavigator);
   var _default = App;
   exports.default = _default;
-},569,[578,1,570,701,708,49,2],"App.js");
+},569,[570,1,571,701,707,712,49,2],"App.js");
+__d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
+  function _interopRequireWildcard(obj) {
+    if (obj && obj.__esModule) {
+      return obj;
+    } else {
+      var newObj = {};
+
+      if (obj != null) {
+        for (var key in obj) {
+          if (Object.prototype.hasOwnProperty.call(obj, key)) {
+            var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {};
+
+            if (desc.get || desc.set) {
+              Object.defineProperty(newObj, key, desc);
+            } else {
+              newObj[key] = obj[key];
+            }
+          }
+        }
+      }
+
+      newObj["default"] = obj;
+      return newObj;
+    }
+  }
+
+  module.exports = _interopRequireWildcard;
+},570,[],"node_modules/@babel/runtime/helpers/interopRequireWildcard.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   module.exports = {
     get createAppContainer() {
@@ -92985,7 +93018,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     }
 
   };
-},570,[571,573,641,668,690],"node_modules/react-navigation/src/react-navigation.js");
+},571,[572,574,641,668,690],"node_modules/react-navigation/src/react-navigation.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   module.exports = {
     get createAppContainer() {
@@ -93025,7 +93058,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     }
 
   };
-},571,[572,614,615,616,617,618,621],"node_modules/@react-navigation/native/src/index.js");
+},572,[573,614,615,616,617,618,621],"node_modules/@react-navigation/native/src/index.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -93506,7 +93539,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     NavigationContainer = _wrapComponent("NavigationContainer")(NavigationContainer);
     return NavigationContainer;
   }
-},572,[1,11,101,22,30,33,23,36,9,49,198,2,573,612,613],"node_modules/@react-navigation/native/src/createAppContainer.js");
+},573,[1,11,101,22,30,33,23,36,9,49,198,2,574,612,613],"node_modules/@react-navigation/native/src/createAppContainer.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   module.exports = {
     get StateUtils() {
@@ -93602,7 +93635,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     }
 
   };
-},573,[574,576,584,585,586,579,602,591,603,605,587,589,588,592,607,593,601,600,608,609,611],"node_modules/@react-navigation/core/lib/module/index.js");
+},574,[575,577,584,585,586,579,602,591,603,605,587,589,588,592,607,593,601,600,608,609,611],"node_modules/@react-navigation/core/lib/module/index.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -93727,7 +93760,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   };
   var _default = StateUtils;
   exports.default = _default;
-},574,[1,46,575],"node_modules/@react-navigation/core/lib/module/StateUtils.js");
+},575,[1,46,576],"node_modules/@react-navigation/core/lib/module/StateUtils.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var validateFormat = function validateFormat() {};
 
@@ -93762,7 +93795,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   }
 
   module.exports = invariant;
-},575,[],"node_modules/@react-navigation/core/lib/module/utils/invariant.js");
+},576,[],"node_modules/@react-navigation/core/lib/module/utils/invariant.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -93831,7 +93864,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     });
     return navigation;
   }
-},576,[1,46,577,580,583],"node_modules/@react-navigation/core/lib/module/getNavigation.js");
+},577,[1,46,578,580,583],"node_modules/@react-navigation/core/lib/module/getNavigation.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -93886,35 +93919,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _default = getNavigationActionCreators;
   exports.default = _default;
-},577,[1,578,579,575],"node_modules/@react-navigation/core/lib/module/routers/getNavigationActionCreators.js");
-__d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
-  function _interopRequireWildcard(obj) {
-    if (obj && obj.__esModule) {
-      return obj;
-    } else {
-      var newObj = {};
-
-      if (obj != null) {
-        for (var key in obj) {
-          if (Object.prototype.hasOwnProperty.call(obj, key)) {
-            var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {};
-
-            if (desc.get || desc.set) {
-              Object.defineProperty(newObj, key, desc);
-            } else {
-              newObj[key] = obj[key];
-            }
-          }
-        }
-      }
-
-      newObj["default"] = obj;
-      return newObj;
-    }
-  }
-
-  module.exports = _interopRequireWildcard;
-},578,[],"node_modules/@babel/runtime/helpers/interopRequireWildcard.js");
+},578,[1,570,579,576],"node_modules/@react-navigation/core/lib/module/routers/getNavigationActionCreators.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -94108,7 +94113,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _default = _getChildNavigation;
   exports.default = _default;
-},580,[1,46,581,582,577,583],"node_modules/@react-navigation/core/lib/module/getChildNavigation.js");
+},580,[1,46,581,582,578,583],"node_modules/@react-navigation/core/lib/module/getChildNavigation.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -94426,7 +94431,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _default = createNavigator;
   exports.default = _default;
-},584,[1,11,22,23,30,33,36,49,575],"node_modules/@react-navigation/core/lib/module/navigators/createNavigator.js");
+},584,[1,11,22,23,30,33,36,49,576],"node_modules/@react-navigation/core/lib/module/navigators/createNavigator.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -94840,7 +94845,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   };
 
   exports.default = _default;
-},587,[578,1,18,46,575,588,589,579,591,592,593],"node_modules/@react-navigation/core/lib/module/routers/SwitchRouter.js");
+},587,[570,1,18,46,576,588,589,579,591,592,593],"node_modules/@react-navigation/core/lib/module/routers/SwitchRouter.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -94874,7 +94879,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
     return routeConfig;
   }
-},588,[1,65,575],"node_modules/@react-navigation/core/lib/module/routers/getScreenForRouteName.js");
+},588,[1,65,576],"node_modules/@react-navigation/core/lib/module/routers/getScreenForRouteName.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -94927,7 +94932,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   };
 
   exports.default = _default;
-},589,[1,46,575,588,590],"node_modules/@react-navigation/core/lib/module/routers/createConfigGetter.js");
+},589,[1,46,576,588,590],"node_modules/@react-navigation/core/lib/module/routers/createConfigGetter.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -95026,7 +95031,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _default = validateRouteConfigMap;
   exports.default = _default;
-},592,[1,65,575],"node_modules/@react-navigation/core/lib/module/routers/validateRouteConfigMap.js");
+},592,[1,65,576],"node_modules/@react-navigation/core/lib/module/routers/validateRouteConfigMap.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireWildcard = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireWildcard");
 
@@ -95282,7 +95287,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   };
 
   exports.createPathParser = createPathParser;
-},593,[578,1,12,46,594,579,575,596],"node_modules/@react-navigation/core/lib/module/routers/pathUtils.js");
+},593,[570,1,12,46,594,579,576,596],"node_modules/@react-navigation/core/lib/module/routers/pathUtils.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var isarray = _$$_REQUIRE(_dependencyMap[0], "isarray");
 
@@ -96690,7 +96695,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   };
 
   exports.default = _default;
-},603,[578,1,18,46,579,602,589,588,574,592,575,604,593],"node_modules/@react-navigation/core/lib/module/routers/StackRouter.js");
+},603,[570,1,18,46,579,602,589,588,575,592,576,604,593],"node_modules/@react-navigation/core/lib/module/routers/StackRouter.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -96933,7 +96938,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     ComponentWithNavigation.displayName = "withNavigation(" + (Component.displayName || Component.name) + ")";
     return (0, _hoistNonReactStatics.default)(ComponentWithNavigation, Component);
   }
-},609,[1,11,22,23,30,33,36,49,610,575,585],"node_modules/@react-navigation/core/lib/module/views/withNavigation.js");
+},609,[1,11,22,23,30,33,36,49,610,576,585],"node_modules/@react-navigation/core/lib/module/views/withNavigation.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   'use strict';
 
@@ -97505,7 +97510,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     NavigationAwareScrollable = _wrapComponent("NavigationAwareScrollable")(NavigationAwareScrollable);
     return (0, _hoistNonReactStatics.default)(NavigationAwareScrollable, Component);
   }
-},615,[1,11,22,23,30,33,36,49,198,610,573],"node_modules/@react-navigation/native/src/createNavigationAwareScrollable.js");
+},615,[1,11,22,23,30,33,36,49,198,610,574],"node_modules/@react-navigation/native/src/createNavigationAwareScrollable.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -97755,7 +97760,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _default2 = ResourceSavingSceneView;
   exports.default = _default2;
-},617,[1,11,9,22,30,33,23,36,49,198,2,573],"node_modules/@react-navigation/native/src/ResourceSavingSceneView.js");
+},617,[1,11,9,22,30,33,23,36,49,198,2,574],"node_modules/@react-navigation/native/src/ResourceSavingSceneView.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -98248,7 +98253,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   };
 
   exports.withSafeArea = withSafeArea;
-},618,[1,578,11,9,46,22,23,30,33,36,49,198,2,619,620],"node_modules/react-native-safe-area-view/index.js");
+},618,[1,570,11,9,46,22,23,30,33,36,49,198,2,619,620],"node_modules/react-native-safe-area-view/index.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   'use strict';
 
@@ -98433,7 +98438,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     withOrientation = _wrapComponent("withOrientation")(withOrientation);
     return (0, _hoistNonReactStatics.default)(withOrientation, WrappedComponent);
   }
-},620,[1,578,11,22,23,30,33,36,49,198,2,619],"node_modules/react-native-safe-area-view/withOrientation.js");
+},620,[1,570,11,22,23,30,33,36,49,198,2,619],"node_modules/react-native-safe-area-view/withOrientation.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -98996,7 +99001,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       flexDirection: 'row-reverse'
     })
   });
-},623,[1,578,11,46,22,23,30,33,36,49,198,2,624],"node_modules/react-native-gesture-handler/Swipeable.js");
+},623,[1,570,11,46,22,23,30,33,36,49,198,2,624],"node_modules/react-native-gesture-handler/Swipeable.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -100886,7 +100891,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       zIndex: 1000
     })
   });
-},634,[1,578,46,22,23,30,33,36,49,198,3,2,624],"node_modules/react-native-gesture-handler/DrawerLayout.js");
+},634,[1,570,46,22,23,30,33,36,49,198,3,2,624],"node_modules/react-native-gesture-handler/DrawerLayout.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -101066,7 +101071,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _default2 = TouchableNativeFeedback;
   exports.default = _default2;
-},636,[1,578,46,11,9,22,23,30,33,36,49,198,637,64],"node_modules/react-native-gesture-handler/touchables/TouchableNativeFeedback.android.js");
+},636,[1,570,46,11,9,22,23,30,33,36,49,198,637,64],"node_modules/react-native-gesture-handler/touchables/TouchableNativeFeedback.android.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -101371,7 +101376,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _default2 = GenericTouchable;
   exports.default = _default2;
-},637,[1,578,46,11,22,23,30,33,36,49,198,2,624,64],"node_modules/react-native-gesture-handler/touchables/GenericTouchable.js");
+},637,[1,570,46,11,22,23,30,33,36,49,198,2,624,64],"node_modules/react-native-gesture-handler/touchables/GenericTouchable.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -101538,7 +101543,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _default2 = TouchableOpacity;
   exports.default = _default2;
-},639,[1,578,46,11,9,22,23,30,33,36,49,198,2,637,64],"node_modules/react-native-gesture-handler/touchables/TouchableOpacity.js");
+},639,[1,570,46,11,9,22,23,30,33,36,49,198,2,637,64],"node_modules/react-native-gesture-handler/touchables/TouchableOpacity.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -101705,7 +101710,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _default2 = TouchableHighlight;
   exports.default = _default2;
-},640,[1,578,46,11,9,22,23,30,33,36,49,198,637,2,64],"node_modules/react-native-gesture-handler/touchables/TouchableHighlight.js");
+},640,[1,570,46,11,9,22,23,30,33,36,49,198,637,2,64],"node_modules/react-native-gesture-handler/touchables/TouchableHighlight.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _reactNative = _$$_REQUIRE(_dependencyMap[0], "react-native");
 
@@ -101805,7 +101810,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _default = createStackNavigator;
   exports.default = _default;
-},642,[1,573,571,2,643],"node_modules/react-navigation-stack/src/navigators/createStackNavigator.js");
+},642,[1,574,572,2,643],"node_modules/react-navigation-stack/src/navigators/createStackNavigator.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -101977,7 +101982,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   StackView = _wrapComponent("StackView")(StackView);
   var _default2 = StackView;
   exports.default = _default2;
-},643,[1,11,46,22,23,30,33,36,49,198,573,644,665,660],"node_modules/react-navigation-stack/src/views/StackView/StackView.js");
+},643,[1,11,46,22,23,30,33,36,49,198,574,644,665,660],"node_modules/react-navigation-stack/src/views/StackView/StackView.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -102856,7 +102861,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   var _default2 = (0, _native.withOrientation)(StackViewLayout);
 
   exports.default = _default2;
-},644,[1,9,11,46,22,23,30,33,36,49,198,2,573,571,645,622,646,649,660,657,663,664,662],"node_modules/react-navigation-stack/src/views/StackView/StackViewLayout.js");
+},644,[1,9,11,46,22,23,30,33,36,49,198,2,574,572,645,622,646,649,660,657,663,664,662],"node_modules/react-navigation-stack/src/views/StackView/StackViewLayout.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -104183,7 +104188,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   var _default2 = (0, _native.withOrientation)(Header);
 
   exports.default = _default2;
-},649,[1,9,11,47,46,22,23,30,33,36,49,198,2,571,650,651,656,657,659],"node_modules/react-navigation-stack/src/views/Header/Header.js");
+},649,[1,9,11,47,46,22,23,30,33,36,49,198,2,572,650,651,656,657,659],"node_modules/react-navigation-stack/src/views/Header/Header.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -106636,7 +106641,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   var _default2 = (0, _createTabNavigator.default)(TabNavigationView);
 
   exports.default = _default2;
-},669,[1,578,18,11,22,23,30,33,36,49,198,2,670,645,671,672,676],"node_modules/react-navigation-tabs/src/navigators/createBottomTabNavigator.js");
+},669,[1,570,18,11,22,23,30,33,36,49,198,2,670,645,671,672,676],"node_modules/react-navigation-tabs/src/navigators/createBottomTabNavigator.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   'use strict';
 
@@ -107043,7 +107048,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       return (0, _core.createNavigator)(NavigationView, router, config);
     };
   }
-},671,[1,578,11,46,22,23,30,33,36,49,198,573],"node_modules/react-navigation-tabs/src/utils/createTabNavigator.js");
+},671,[1,570,11,46,22,23,30,33,36,49,198,574],"node_modules/react-navigation-tabs/src/utils/createTabNavigator.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -107534,7 +107539,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   var _default2 = (0, _withDimensions.default)(TabBarBottom);
 
   exports.default = _default2;
-},672,[1,11,9,22,23,30,33,36,49,198,2,571,673,674],"node_modules/react-navigation-tabs/src/views/BottomTabBar.js");
+},672,[1,11,9,22,23,30,33,36,49,198,2,572,673,674],"node_modules/react-navigation-tabs/src/views/BottomTabBar.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -107783,7 +107788,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     EnhancedComponent = _wrapComponent("EnhancedComponent")(EnhancedComponent);
     return (0, _hoistNonReactStatics.default)(EnhancedComponent, WrappedComponent);
   }
-},674,[1,578,11,22,23,30,33,36,49,198,2,675],"node_modules/react-navigation-tabs/src/utils/withDimensions.js");
+},674,[1,570,11,22,23,30,33,36,49,198,2,675],"node_modules/react-navigation-tabs/src/utils/withDimensions.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   'use strict';
 
@@ -107975,7 +107980,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       top: FAR_FAR_AWAY
     }
   });
-},676,[1,578,11,9,22,23,30,33,36,49,198,2,645],"node_modules/react-navigation-tabs/src/views/ResourceSavingScene.js");
+},676,[1,570,11,9,22,23,30,33,36,49,198,2,645],"node_modules/react-navigation-tabs/src/views/ResourceSavingScene.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -108314,7 +108319,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   var _default2 = (0, _createTabNavigator.default)(MaterialTabView);
 
   exports.default = _default2;
-},677,[1,578,9,18,11,22,23,30,33,36,49,198,2,670,678,671,689,676],"node_modules/react-navigation-tabs/src/navigators/createMaterialTopTabNavigator.js");
+},677,[1,570,9,18,11,22,23,30,33,36,49,198,2,670,678,671,689,676],"node_modules/react-navigation-tabs/src/navigators/createMaterialTopTabNavigator.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -108683,7 +108688,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       flex: 1
     }
   });
-},679,[1,578,11,9,46,22,23,30,33,36,49,198,64,2,680,683,682],"node_modules/react-native-tab-view/src/TabView.js");
+},679,[1,570,11,9,46,22,23,30,33,36,49,198,64,2,680,683,682],"node_modules/react-native-tab-view/src/TabView.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -109303,7 +109308,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       height: 2
     }
   });
-},680,[1,578,46,18,22,23,30,33,36,49,198,64,2,681,682],"node_modules/react-native-tab-view/src/TabBar.js");
+},680,[1,570,46,18,22,23,30,33,36,49,198,64,2,681,682],"node_modules/react-native-tab-view/src/TabBar.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -109420,7 +109425,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _default2 = TouchableItem;
   exports.default = _default2;
-},681,[1,578,11,9,22,23,30,33,36,49,198,64,2],"node_modules/react-native-tab-view/src/TouchableItem.js");
+},681,[1,570,11,9,22,23,30,33,36,49,198,64,2],"node_modules/react-native-tab-view/src/TouchableItem.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -109721,7 +109726,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       overflow: 'hidden'
     }
   });
-},684,[1,578,22,23,30,33,36,49,198,2,682],"node_modules/react-native-tab-view/src/PagerAndroid.js");
+},684,[1,570,22,23,30,33,36,49,198,2,682],"node_modules/react-native-tab-view/src/PagerAndroid.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -109956,7 +109961,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       overflow: 'hidden'
     }
   });
-},685,[1,578,22,23,30,33,36,49,198,2,682],"node_modules/react-native-tab-view/src/PagerScroll.js");
+},685,[1,570,22,23,30,33,36,49,198,2,682],"node_modules/react-native-tab-view/src/PagerScroll.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -110239,7 +110244,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       alignItems: 'stretch'
     }
   });
-},686,[1,578,11,46,9,22,23,30,33,36,49,198,64,2,682],"node_modules/react-native-tab-view/src/PagerPan.js");
+},686,[1,570,11,46,9,22,23,30,33,36,49,198,64,2,682],"node_modules/react-native-tab-view/src/PagerPan.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -110494,7 +110499,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       alignItems: 'stretch'
     }
   });
-},687,[1,578,46,9,22,23,30,33,36,49,198,64,2,682],"node_modules/react-native-tab-view/src/PagerExperimental.js");
+},687,[1,570,46,9,22,23,30,33,36,49,198,64,2,682],"node_modules/react-native-tab-view/src/PagerExperimental.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -110579,7 +110584,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       });
     };
   }
-},688,[1,578,9,22,23,30,33,36,49,198],"node_modules/react-native-tab-view/src/SceneMap.js");
+},688,[1,570,9,22,23,30,33,36,49,198],"node_modules/react-native-tab-view/src/SceneMap.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -110807,7 +110812,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       backgroundColor: 'transparent'
     }
   });
-},689,[1,578,11,9,18,22,23,30,33,36,49,198,2,678,673],"node_modules/react-navigation-tabs/src/views/MaterialTopTabBar.js");
+},689,[1,570,11,9,18,22,23,30,33,36,49,198,2,678,673],"node_modules/react-navigation-tabs/src/views/MaterialTopTabBar.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   module.exports = {
     get createDrawerNavigator() {
@@ -110926,7 +110931,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _default = DrawerNavigator;
   exports.default = _default;
-},691,[1,46,11,49,2,573,571,692,694,699],"node_modules/react-navigation-drawer/dist/navigators/createDrawerNavigator.js");
+},691,[1,46,11,49,2,574,572,692,694,699],"node_modules/react-navigation-drawer/dist/navigators/createDrawerNavigator.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -111091,7 +111096,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   };
 
   exports.default = _default;
-},692,[1,46,573,693],"node_modules/react-navigation-drawer/dist/routers/DrawerRouter.js");
+},692,[1,46,574,693],"node_modules/react-navigation-drawer/dist/routers/DrawerRouter.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -111495,7 +111500,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       flex: 1
     }
   });
-},694,[1,18,11,22,23,30,33,36,49,198,2,573,634,645,693,695,697,698],"node_modules/react-navigation-drawer/dist/views/DrawerView.js");
+},694,[1,18,11,22,23,30,33,36,49,198,2,574,634,645,693,695,697,698],"node_modules/react-navigation-drawer/dist/views/DrawerView.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -111672,7 +111677,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       flex: 1
     }
   });
-},695,[1,11,22,23,30,33,36,49,198,2,573,696],"node_modules/react-navigation-drawer/dist/views/DrawerSidebar.js");
+},695,[1,11,22,23,30,33,36,49,198,2,574,696],"node_modules/react-navigation-drawer/dist/views/DrawerSidebar.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   'use strict';
 
@@ -111842,7 +111847,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       top: FAR_FAR_AWAY
     }
   });
-},698,[1,578,11,9,22,23,30,33,36,49,198,2,645],"node_modules/react-navigation-drawer/dist/views/ResourceSavingScene.js");
+},698,[1,570,11,9,22,23,30,33,36,49,198,2,645],"node_modules/react-navigation-drawer/dist/views/ResourceSavingScene.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -111975,7 +111980,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _default = DrawerNavigatorItems;
   exports.default = _default;
-},699,[1,47,49,2,571,700],"node_modules/react-navigation-drawer/dist/views/DrawerNavigatorItems.js");
+},699,[1,47,49,2,572,700],"node_modules/react-navigation-drawer/dist/views/DrawerNavigatorItems.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -112325,13 +112330,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       height: 30
     }
   });
-},701,[1,578,22,23,30,33,36,49,198,2,703,704,707,705,706],"Components/Home.js");
-__d(function(global, require, _aUnused, _bUnused, module, exports, _cUnused) {
-  module.exports = {
-  "name": "TestJob",
-  "displayName": "TestJob"
-};
-},702,[],"app.json");
+},701,[1,570,22,23,30,33,36,49,198,2,702,703,704,705,706],"Components/Home.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   module.exports = _$$_REQUIRE(_dependencyMap[0], "/Users/vigneshwarramasamy/TestJob/node_modules/react-native/Libraries/Image/AssetRegistry").registerAsset({
     "__packager_asset": true,
@@ -112343,7 +112342,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     "name": "building",
     "type": "png"
   });
-},703,[191],"Components/Assets/building.png");
+},702,[191],"Components/Assets/building.png");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   module.exports = _$$_REQUIRE(_dependencyMap[0], "/Users/vigneshwarramasamy/TestJob/node_modules/react-native/Libraries/Image/AssetRegistry").registerAsset({
     "__packager_asset": true,
@@ -112355,7 +112354,19 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     "name": "google-plus-logo",
     "type": "png"
   });
-},704,[191],"Components/Assets/google-plus-logo.png");
+},703,[191],"Components/Assets/google-plus-logo.png");
+__d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
+  module.exports = _$$_REQUIRE(_dependencyMap[0], "/Users/vigneshwarramasamy/TestJob/node_modules/react-native/Libraries/Image/AssetRegistry").registerAsset({
+    "__packager_asset": true,
+    "httpServerLocation": "/assets/Components/Assets",
+    "width": 32,
+    "height": 32,
+    "scales": [1],
+    "hash": "682c8f1be6be757783f1e66c6267263e",
+    "name": "facebook-logo",
+    "type": "png"
+  });
+},704,[191],"Components/Assets/facebook-logo.png");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   module.exports = _$$_REQUIRE(_dependencyMap[0], "/Users/vigneshwarramasamy/TestJob/node_modules/react-native/Libraries/Image/AssetRegistry").registerAsset({
     "__packager_asset": true,
@@ -112380,18 +112391,6 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     "type": "png"
   });
 },706,[191],"Components/Assets/envelope.png");
-__d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
-  module.exports = _$$_REQUIRE(_dependencyMap[0], "/Users/vigneshwarramasamy/TestJob/node_modules/react-native/Libraries/Image/AssetRegistry").registerAsset({
-    "__packager_asset": true,
-    "httpServerLocation": "/assets/Components/Assets",
-    "width": 32,
-    "height": 32,
-    "scales": [1],
-    "hash": "682c8f1be6be757783f1e66c6267263e",
-    "name": "facebook-logo",
-    "type": "png"
-  });
-},707,[191],"Components/Assets/facebook-logo.png");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -112420,10 +112419,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _reactNative = _$$_REQUIRE(_dependencyMap[10], "react-native");
 
-  var _class,
-      _temp,
-      _jsxFileName = "/Users/vigneshwarramasamy/TestJob/Components/Login.js";
-
+  var _jsxFileName = "/Users/vigneshwarramasamy/TestJob/Components/Login.js";
   var _components = {
     Login: {
       displayName: "Login"
@@ -112443,7 +112439,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     };
   }
 
-  var Login = _wrapComponent("Login")((_temp = _class = function (_Component) {
+  var Login = _wrapComponent("Login")(function (_Component) {
     (0, _inherits2.default)(Login, _Component);
 
     function Login() {
@@ -112461,13 +112457,13 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
           style: styles.container,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 13
+            lineNumber: 11
           }
         }, _react.default.createElement(_reactNative.View, {
           style: styles.LoginForm,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 14
+            lineNumber: 12
           }
         }, _react.default.createElement(_reactNative.View, {
           style: {
@@ -112475,7 +112471,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 15
+            lineNumber: 13
           }
         }, _react.default.createElement(_reactNative.Text, {
           style: {
@@ -112483,18 +112479,26 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 16
+            lineNumber: 14
           }
-        }, "Sign In"), _react.default.createElement(_reactNative.Text, {
+        }, "Sign In"), _react.default.createElement(_reactNative.TouchableOpacity, {
+          onPress: function onPress() {
+            return navigate('SignUp');
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 15
+          }
+        }, _react.default.createElement(_reactNative.Text, {
           style: {
             color: '#000',
             marginLeft: 150
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 17
+            lineNumber: 16
           }
-        }, "I don't have an account")), _react.default.createElement(_reactNative.TextInput, {
+        }, "I don't have an account"))), _react.default.createElement(_reactNative.TextInput, {
           style: styles.Input,
           autoCapitalize: "none",
           onSubmitEditing: function onSubmitEditing() {
@@ -112505,7 +112509,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
           placeholder: "Email",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 20
+            lineNumber: 21
           }
         }), _react.default.createElement(_reactNative.TextInput, {
           style: styles.Input,
@@ -112518,22 +112522,21 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
           placeholder: "Password",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 28
+            lineNumber: 29
           }
         }), _react.default.createElement(_reactNative.View, {
           style: {
-            borderRadius: 25,
             marginLeft: 250,
             borderWidth: 1,
             borderColor: '#000000',
-            backgroundColor: 'grey',
+            backgroundColor: '#fff',
             padding: 10,
             marginTop: 20,
             justifyContent: 'center'
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 35
+            lineNumber: 36
           }
         }, _react.default.createElement(_reactNative.Text, {
           style: {
@@ -112541,15 +112544,23 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 36
+            lineNumber: 37
           }
-        }, "Log In"))));
+        }, "Log In")), _react.default.createElement(_reactNative.Text, {
+          style: {
+            color: '#000000',
+            marginLeft: 150,
+            marginTop: 10
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 40
+          }
+        }, "I've forgotten my Password")));
       }
     }]);
     return Login;
-  }(_react.Component), _class.navigationOptions = {
-    header: null
-  }, _temp));
+  }(_react.Component));
 
   var _default2 = Login;
   exports.default = _default2;
@@ -112576,7 +112587,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       marginHorizontal: 36
     }
   });
-},708,[1,578,22,23,30,33,36,49,198,709,2],"Components/Login.js");
+},707,[1,570,22,23,30,33,36,49,198,708,2],"Components/Login.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   'use strict';
 
@@ -112593,7 +112604,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   });
 
   var _TextInputLayout = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[1], "./src/TextInputLayout"));
-},709,[1,710],"node_modules/rn-textinputlayout/index.js");
+},708,[1,709],"node_modules/rn-textinputlayout/index.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   'use strict';
 
@@ -112840,7 +112851,249 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _default2 = TextInputLayout;
   exports.default = _default2;
-},710,[1,578,46,22,23,30,33,32,36,49,198,2,64],"node_modules/rn-textinputlayout/src/TextInputLayout.js");
+},709,[1,570,46,22,23,30,33,32,36,49,198,2,64],"node_modules/rn-textinputlayout/src/TextInputLayout.js");
+__d(function(global, require, _aUnused, _bUnused, module, exports, _cUnused) {
+  module.exports = {
+  "name": "TestJob",
+  "displayName": "TestJob"
+};
+},711,[],"app.json");
+__d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
+  var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
+
+  var _interopRequireWildcard = _$$_REQUIRE(_dependencyMap[1], "@babel/runtime/helpers/interopRequireWildcard");
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = void 0;
+
+  var _classCallCheck2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[2], "@babel/runtime/helpers/classCallCheck"));
+
+  var _createClass2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[3], "@babel/runtime/helpers/createClass"));
+
+  var _possibleConstructorReturn2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/possibleConstructorReturn"));
+
+  var _getPrototypeOf2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[5], "@babel/runtime/helpers/getPrototypeOf"));
+
+  var _inherits2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[6], "@babel/runtime/helpers/inherits"));
+
+  var _react = _interopRequireWildcard(_$$_REQUIRE(_dependencyMap[7], "react"));
+
+  var _index = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[8], "./../node_modules/react-transform-hmr/lib/index.js"));
+
+  var _rnTextinputlayout = _$$_REQUIRE(_dependencyMap[9], "rn-textinputlayout");
+
+  var _reactNative = _$$_REQUIRE(_dependencyMap[10], "react-native");
+
+  var _jsxFileName = "/Users/vigneshwarramasamy/TestJob/Components/SignUp.js";
+  var _components = {
+    SignUp: {
+      displayName: "SignUp"
+    }
+  };
+
+  var _node_modulesReactTransformHmrLibIndexJs2 = (0, _index.default)({
+    filename: "Components/SignUp.js",
+    components: _components,
+    locals: [module],
+    imports: [_react.default]
+  });
+
+  function _wrapComponent(id) {
+    return function (Component) {
+      return _node_modulesReactTransformHmrLibIndexJs2(Component, id);
+    };
+  }
+
+  var SignUp = _wrapComponent("SignUp")(function (_Component) {
+    (0, _inherits2.default)(SignUp, _Component);
+
+    function SignUp() {
+      (0, _classCallCheck2.default)(this, SignUp);
+      return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(SignUp).apply(this, arguments));
+    }
+
+    (0, _createClass2.default)(SignUp, [{
+      key: "render",
+      value: function render() {
+        var _this = this;
+
+        var navigate = this.props.navigation.navigate;
+        return _react.default.createElement(_reactNative.View, {
+          style: styles.container,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 11
+          }
+        }, _react.default.createElement(_reactNative.View, {
+          style: styles.LoginForm,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 12
+          }
+        }, _react.default.createElement(_reactNative.View, {
+          style: {
+            flexDirection: 'row'
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 13
+          }
+        }, _react.default.createElement(_reactNative.Text, {
+          style: {
+            color: '#000'
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 14
+          }
+        }, "Sign Up"), _react.default.createElement(_reactNative.TouchableOpacity, {
+          onPress: function onPress() {
+            return _this.props.navigation.goBack(null);
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 15
+          }
+        }, _react.default.createElement(_reactNative.Text, {
+          style: {
+            color: '#000',
+            marginLeft: 150
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 16
+          }
+        }, "I already have an account"))), _react.default.createElement(_reactNative.TextInput, {
+          style: styles.Input,
+          autoCapitalize: "none",
+          onSubmitEditing: function onSubmitEditing() {
+            return _this.passwordInput.focus();
+          },
+          autoCorrect: false,
+          returnKeyType: "next",
+          placeholder: "FirstName",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 21
+          }
+        }), _react.default.createElement(_reactNative.TextInput, {
+          style: styles.Input,
+          autoCapitalize: "none",
+          onSubmitEditing: function onSubmitEditing() {
+            return _this.passwordInput.focus();
+          },
+          autoCorrect: false,
+          returnKeyType: "next",
+          placeholder: "LastName",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 28
+          }
+        }), _react.default.createElement(_reactNative.TextInput, {
+          style: styles.Input,
+          autoCapitalize: "none",
+          onSubmitEditing: function onSubmitEditing() {
+            return _this.passwordInput.focus();
+          },
+          autoCorrect: false,
+          returnKeyType: "next",
+          placeholder: "Email",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 35
+          }
+        }), _react.default.createElement(_reactNative.TextInput, {
+          style: styles.Input,
+          autoCapitalize: "none",
+          onSubmitEditing: function onSubmitEditing() {
+            return _this.passwordInput.focus();
+          },
+          autoCorrect: false,
+          returnKeyType: "next",
+          placeholder: "Password",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 42
+          }
+        }), _react.default.createElement(_reactNative.TextInput, {
+          style: styles.Input,
+          autoCapitalize: "none",
+          onSubmitEditing: function onSubmitEditing() {
+            return _this.passwordInput.focus();
+          },
+          autoCorrect: false,
+          returnKeyType: "next",
+          placeholder: "Confirm Password",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 49
+          }
+        }), _react.default.createElement(_reactNative.View, {
+          style: {
+            marginLeft: 180,
+            borderWidth: 1,
+            borderColor: '#000000',
+            backgroundColor: '#fff',
+            padding: 10,
+            marginTop: 20,
+            justifyContent: 'center'
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 56
+          }
+        }, _react.default.createElement(_reactNative.Text, {
+          style: {
+            color: '#000000'
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 57
+          }
+        }, "Sign via email link")), _react.default.createElement(_reactNative.Text, {
+          style: {
+            color: '#000000',
+            marginLeft: 180,
+            marginTop: 15
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 60
+          }
+        }, "I've forgotten my Password")));
+      }
+    }]);
+    return SignUp;
+  }(_react.Component));
+
+  var _default2 = SignUp;
+  exports.default = _default2;
+
+  var styles = _reactNative.StyleSheet.create({
+    container: {
+      flex: 1
+    },
+    LoginForm: {
+      marginTop: 100,
+      justifyContent: 'flex-start',
+      alignItems: 'flex-start',
+      marginLeft: 20
+    },
+    Input: {
+      width: '90%',
+      marginTop: 20,
+      borderBottomWidth: 0.5,
+      marginLeft: 10,
+      marginRight: 10
+    },
+    inputLayout: {
+      marginTop: 16,
+      marginHorizontal: 36
+    }
+  });
+},712,[1,570,22,23,30,33,36,49,198,708,2],"Components/SignUp.js");
 __r(86);
 __r(0);
 //# sourceMappingURL=index.map
