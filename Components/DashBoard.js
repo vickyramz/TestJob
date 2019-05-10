@@ -6,7 +6,26 @@ import { TabView, SceneMap } from 'react-native-tab-view';
 import Animated from 'react-native-reanimated';
 
 const FirstRoute = () => (
-  <View style={[styles.container, { backgroundColor: '#ff4081' }]} />
+  <View style={[styles.container, { backgroundColor: '#fff' }]} >
+  <View style={styles.Mapcontainer}>
+  <Text style={{fontSize:20,color:'#000000',marginTop:40}}>SHRAES REMAINING</Text>
+<Text style={{fontSize:12,color:'#000000',marginTop:10}}>110,966,900CRD</Text>
+
+<View style={{padding:40,borderColor:'#000000',justifyContent:'center',alignItems:'center'}}>
+<Image source={require('./Assets/wallet.png')} style={{width:50,height:50}} />
+</View>
+<Text style={{fontSize:20,color:'#000000'}}>Welcome to CREID.</Text>
+<Text style={{fontSize:12,color:'#000000'}}>We've set aside 111,000,000CRD shares for you to claim, equivalent to 10% of Creid Technologies Limited.</Text>
+<Text style={{fontSize:12,color:'#000000',marginTop:20}}>Share CREID. Share in the property disruption.</Text>
+<TouchableOpacity>
+<View style={{padding:30,justifyContent:'center',alignItems:'center',backgroundColor:'#ac9f6b',borderRadius:10,marginTop:20}}>
+<Text style={{color:'#fff'}}>COLLECT SHRAES</Text>
+</View>
+</TouchableOpacity>
+
+
+  </View>
+  </View>
 );
 const SecondRoute = () => (
   <View style={[styles.container, { backgroundColor: '#fff' }]} >
