@@ -15,9 +15,12 @@ import { AppRegistry,Image,Text, StyleSheet,View ,TouchableOpacity} from 'react-
           <Text style={styles.WelcomeText}>Welcome to Creid</Text>
           <Text style={styles.DescriptionText}>Track your Property Value in Real-time</Text>
           <View style={{flexDirection:'row',marginTop:20,justifyContent:'space-between'}}>
+
+          <TouchableOpacity onPress={() => navigate('LiveValution')}>
           <View style={styles.Googlecircle}>
           <Image source={require('./Assets/google-plus-logo.png')} style={styles.GoogleImage} />
           </View>
+          </TouchableOpacity>
           <View style={styles.FacebooCircle}>
           <Image source={require('./Assets/facebook-logo.png')} style={styles.GoogleImage} />
           </View>

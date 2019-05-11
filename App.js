@@ -8,8 +8,9 @@ import ForgotPassword from './Components/ForgotPassword'
 import React, { Component } from 'react';
 import { AppRegistry, View } from 'react-native';
 const MainNavigator = createStackNavigator({
- 
+  
   Home: {screen: Home},
+  LiveValution:{screen:LiveValution},
   LiveValution:{screen:LiveValution},
   Login:{screen:Login},
   SignUp:{screen:SignUp},

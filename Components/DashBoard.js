@@ -117,7 +117,35 @@ const SecondRoute = () => (
   
 );
 const ThirdRoute = () => (
-    <View style={[styles.container, { backgroundColor: '#fff' }]} />
+  <ScrollView>
+<View style={[styles.container, { backgroundColor: '#fff' }]} >
+<View style={{justifyContent:'space-between',alignItems:'center'}}>
+<View style={{borderWidth:1,borderRadius:10,justifyContent:'center',alignItems:'center',marginTop:20,width:'50%',height:100}}>
+<Text style={{fontWeight: 'bold',fontSize:18}}>MORTGAGE</Text>
+</View>
+<View style={{borderWidth:1,borderRadius:10,justifyContent:'center',alignItems:'center',marginTop:20,width:'50%',height:100}}>
+<Text style={{fontWeight: 'bold',fontSize:18}}>ENERGY</Text>
+</View>
+<View style={{borderWidth:1,borderRadius:10,justifyContent:'center',alignItems:'center',marginTop:20,width:'50%',height:100}}>
+<Text style={{fontWeight: 'bold',fontSize:18}}>TV & BROADBAND</Text>
+</View>
+<View style={{borderWidth:1,borderRadius:10,justifyContent:'center',alignItems:'center',marginTop:20,width:'50%',height:100}}>
+<Text style={{fontWeight: 'bold',fontSize:18}}>INSURANCE</Text>
+</View>
+<View style={{borderWidth:1,borderRadius:10,justifyContent:'center',alignItems:'center',marginTop:20,width:'50%',height:100}}>
+<Text style={{fontWeight: 'bold',fontSize:18}}>WATER</Text>
+</View>
+<View style={{borderWidth:1,borderRadius:10,justifyContent:'center',alignItems:'center',marginTop:20,width:'50%',height:100}}>
+<Text style={{fontWeight: 'bold',fontSize:18}}>COUNCIL TAX</Text>
+</View>
+</View>
+<View>
+</View>
+
+
+</View>
+</ScrollView>
+   
   );
   Redirect=()=>{
     this.props.navigation.navigate('Login');
@@ -226,7 +254,6 @@ const styles = StyleSheet.create({
     borderWidth:0,
     borderColor:'#fff',
     justifyContent:'center',
-   
     alignItems:'center'
   
   },
