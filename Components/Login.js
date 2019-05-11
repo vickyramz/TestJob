@@ -1,72 +1,109 @@
-
 import React, { Component } from 'react';
-import {TextInputLayout} from 'rn-textinputlayout';
-import { AppRegistry,TouchableOpacity,Image,Text, StyleSheet,View ,TextInput} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  TextInput,
+  Button,
+  TouchableHighlight,
+  Image,
+  Alert
+} from 'react-native';
 
-  export default class Login extends Component {
-    
-    render() {
-      const {navigate} = this.props.navigation;
-      return (
-        <View style={styles.container}>
-            <View style={styles.LoginForm}>
-            <View style={{flexDirection:'row'}}>
-            <Text style={{color:'#000'}}>Sign In</Text>
-            <TouchableOpacity onPress={() => navigate('SignUp')}>
-            <Text style={{color:'#000',marginLeft:150}}>I don't have an account</Text>
-            </TouchableOpacity>
-          </View>
-           
-           
-            <TextInput style = {styles.Input} 
-               autoCapitalize="none"              
-               onSubmitEditing={() => this.passwordInput.focus()} 
-               autoCorrect={false} 
-               returnKeyType="next" 
-               placeholder='Email' 
-              />
-               
-               <TextInput style = {styles.Input} 
-               autoCapitalize="none"              
-               onSubmitEditing={() => this.passwordInput.focus()} 
-               autoCorrect={false} 
-               returnKeyType="next" 
-               placeholder='Password' 
-              />
-              <TouchableOpacity onPress={()=>navigate('DashBoard')}>
-              <View style={{marginLeft:250,borderWidth:1,borderColor:'#000000',backgroundColor:'#fff', padding:10,marginTop:20, justifyContent:'center'}}>
-              <Text style={{color:'#000000'}}>Log In</Text>
-              </View>
-              </TouchableOpacity>
-              
-              <TouchableOpacity onPress={()=>navigate('ForgotPassword')}>
-              <Text style={{color:'#000000',marginLeft:150,marginTop:20}}>I've forgotten my Password</Text>
-              </TouchableOpacity>
-            </View>
-           
-        </View>
-      );
+export default class LoginView extends Component {
+
+  constructor(props) {
+    super(props);
+    state = {
+      email   : '',
+      password: '',
     }
   }
-  const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-    },
-    LoginForm: {
-        marginTop:200,
-        justifyContent: 'flex-start',
-      alignItems:'flex-start',
-      marginLeft:30,
-    },
-    Input:{
-        width:'90%',
-        marginTop:20,
-        borderBottomWidth: 0.5,
-        marginLeft:10,
-        marginRight:10
-      },
-    inputLayout: {
-        marginTop: 16,
-        marginHorizontal: 36
-    }
+
+  onClickListener = (viewId) => {
+    Alert.alert("Alert", "Button pressed "+viewId);
+  }
+
+  render() {
+    return (
+      <View style={styles.container}>
+        <View style={styles.inputContainer}>
+          <Image style={styles.inputIcon} source={{uri: 'https://png.icons8.com/message/ultraviolet/50/3498db'}}/>
+          <TextInput style={styles.inputs}
+              placeholder="Email"
+              keyboardType="email-address"
+              underlineColorAndroid='transparent'
+              onChangeText={(email) => this.setState({email})}/>
+        </View>
+        
+        <View style={styles.inputContainer}>
+          <Image style={styles.inputIcon} source={{uri: 'https://png.icons8.com/key-2/ultraviolet/50/3498db'}}/>
+          <TextInput style={styles.inputs}
+              placeholder="Password"
+              secureTextEntry={true}
+              underlineColorAndroid='transparent'
+              onChangeText={(password) => this.setState({password})}/>
+        </View>
+
+        <TouchableHighlight style={[styles.buttonContainer, styles.loginButton]} onPress={() => this.props.navigation.navigate('DashBoard')}>
+          <Text style={styles.loginText}>Login</Text>
+        </TouchableHighlight>
+
+        <TouchableHighlight style={styles.buttonContainer} onPress={() => this.onClickListener('restore_password')}>
+            <Text>Forgot your password?</Text>
+        </TouchableHighlight>
+
+        <TouchableHighlight style={styles.buttonContainer} onPress={() => this.onClickListener('register')}>
+            <Text>Register</Text>
+        </TouchableHighlight>
+      </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#DCDCDC',
+  },
+  inputContainer: {
+      borderBottomColor: '#F5FCFF',
+      backgroundColor: '#FFFFFF',
+      borderRadius:30,
+      borderBottomWidth: 1,
+      width:250,
+      height:45,
+      marginBottom:20,
+      flexDirection: 'row',
+      alignItems:'center'
+  },
+  inputs:{
+      height:45,
+      marginLeft:16,
+      borderBottomColor: '#FFFFFF',
+      flex:1,
+  },
+  inputIcon:{
+    width:30,
+    height:30,
+    marginLeft:15,
+    justifyContent: 'center'
+  },
+  buttonContainer: {
+    height:45,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom:20,
+    width:250,
+    borderRadius:30,
+  },
+  loginButton: {
+    backgroundColor: "#00b5ec",
+  },
+  loginText: {
+    color: 'white',
+  }
 });
